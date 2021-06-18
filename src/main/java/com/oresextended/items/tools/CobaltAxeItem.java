@@ -1,6 +1,5 @@
-package com.oresextended.tools.cobalt;
+package com.oresextended.items.tools;
 
-import com.oresextended.ores.CobaltOre;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;
 

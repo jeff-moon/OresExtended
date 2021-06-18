@@ -1,4 +1,4 @@
-package com.oresextended.tools.cobalt;
+package com.oresextended.items.materials;
 
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
