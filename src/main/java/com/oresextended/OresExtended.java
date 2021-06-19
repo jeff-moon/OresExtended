@@ -1,5 +1,7 @@
 package com.oresextended;
 
+import com.oresextended.init.InitBlocks;
+import com.oresextended.init.InitItems;
 import com.oresextended.items.tools.CobaltAxeItem;
 import com.oresextended.items.materials.CobaltToolMaterial;
 import net.fabricmc.api.ModInitializer;
@@ -22,28 +24,11 @@ public class OresExtended implements ModInitializer {
         // Proceed with mild caution.
         System.out.println("Initializing OresExtended");
 
-        System.out.println("Registering ores");
-        this.registerOres();
-        this.registerTools();
-    }
+        System.out.println("Initializing Blocks");
+        InitBlocks.Init();
 
-    private void registerOres() {
-        // Cobalt
-        BlockCobaltOre cobaltOre = new BlockCobaltOre( FabricBlockSettings.of(Material.METAL).hardness(4.0f) );
-        BlockItem cobaltBlockItem = new BlockItem(cobaltOre, new Item.Settings().group(ItemGroup.MISC));
-        Registry.register(Registry.BLOCK, new Identifier(this.NAMESPACE, "cobalt_ore"), cobaltOre);
-        Registry.register(Registry.ITEM, new Identifier(this.NAMESPACE, "cobalt_ore"), cobaltBlockItem);
-
-        //todo create some init routines
-        Item cobalt_ingot = new Item((new Item.Settings()).group(ItemGroup.MATERIALS));
-        Registry.register(Registry.ITEM, new Identifier(this.NAMESPACE, "cobalt_ingot"), cobalt_ingot);
-
-    }
-
-    private void registerTools() {
-        // Cobalt
-        ToolItem  cobaltAxe = new CobaltAxeItem(CobaltToolMaterial.INSTANCE, 2, -3.0f, new Item.Settings().group(ItemGroup.TOOLS));
-        Registry.register(Registry.ITEM, new Identifier(this.NAMESPACE, "cobalt_axe"), cobaltAxe);
+        System.out.println("Initializing Items");
+        InitItems.Init();
     }
 
 }
