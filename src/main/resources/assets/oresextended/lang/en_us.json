@@ -1,4 +1,9 @@
 {
   "key.categories.oresextended": "Ores Extended",
-  "block.oresextended.cobalt_ore": "Cobalt Ore"
+  "block.oresextended.cobalt_ore": "Cobalt Ore",
+  "item.oresextended.cobalt_axe": "Cobalt Axe",
+  "item.oresextended.cobalt_hoe": "Cobalt Hoe",
+  "item.oresextended.cobalt_pickaxe": "Cobalt Pickaxe",
+  "item.oresextended.cobalt_shovel": "Cobalt Shovel",
+  "item.oresextended.cobalt_ingot": "Cobalt Ingot"
 }
