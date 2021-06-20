@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.oresextended.entry.OresExtended"
+      "com.oresextended.OresExtended"
     ]
   },
   "mixins": [
