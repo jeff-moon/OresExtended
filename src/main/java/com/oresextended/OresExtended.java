@@ -1,17 +1,8 @@
 package com.oresextended;
 
-import com.oresextended.init.InitBlocks;
-import com.oresextended.init.InitItems;
-import com.oresextended.items.tools.CobaltAxeItem;
-import com.oresextended.items.materials.CobaltToolMaterial;
+import com.oresextended.registry.BlockRegistry;
+import com.oresextended.registry.ItemRegistry;
 import net.fabricmc.api.ModInitializer;
-
-import com.oresextended.blocks.BlockCobaltOre;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Material;
-import net.minecraft.item.*;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
 
 public class OresExtended implements ModInitializer {
 
@@ -25,10 +16,10 @@ public class OresExtended implements ModInitializer {
         System.out.println("Initializing OresExtended");
 
         System.out.println("Initializing Blocks");
-        InitBlocks.Init();
+        BlockRegistry.Register();
 
         System.out.println("Initializing Items");
-        InitItems.Init();
+        ItemRegistry.Register();
     }
 
 }

@@ -1,4 +1,4 @@
-package com.oresextended.items.tools;
+package com.oresextended.items.tools.cobalt;
 
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.ToolMaterial;
