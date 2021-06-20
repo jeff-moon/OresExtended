@@ -2,6 +2,7 @@ package com.oresextended;
 
 import com.oresextended.registry.BlockRegistry;
 import com.oresextended.registry.ItemRegistry;
+import com.oresextended.registry.WorldRegistry;
 import net.fabricmc.api.ModInitializer;
 
 public class OresExtended implements ModInitializer {
@@ -20,6 +21,9 @@ public class OresExtended implements ModInitializer {
 
         System.out.println("Initializing Items");
         ItemRegistry.Register();
+
+        System.out.println("Registering Ore Blocks");
+        WorldRegistry.Register();
     }
 
 }
