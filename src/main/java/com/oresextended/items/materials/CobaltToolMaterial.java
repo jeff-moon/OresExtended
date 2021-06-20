@@ -1,5 +1,6 @@
 package com.oresextended.items.materials;
 
+import com.oresextended.registry.ItemRegistry;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
@@ -14,7 +15,7 @@ public class CobaltToolMaterial implements ToolMaterial {
 
     @Override()
     public float getMiningSpeedMultiplier() {
-        return 5.0f;
+        return 7.0f;
     }
 
     @Override()
@@ -29,12 +30,12 @@ public class CobaltToolMaterial implements ToolMaterial {
 
     @Override()
     public int getEnchantability() {
-        return 15;
+        return 8;
     }
 
     @Override()
     public Ingredient getRepairIngredient() {
         // TODO cobalt ingot
-        return Ingredient.ofItems(Items.IRON_INGOT);
+        return Ingredient.ofItems(ItemRegistry.COBALT_INGOT);
     }
 }

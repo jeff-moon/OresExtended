@@ -5,5 +5,10 @@
   "item.oresextended.cobalt_hoe": "Cobalt Hoe",
   "item.oresextended.cobalt_pickaxe": "Cobalt Pickaxe",
   "item.oresextended.cobalt_shovel": "Cobalt Shovel",
-  "item.oresextended.cobalt_ingot": "Cobalt Ingot"
+  "item.oresextended.cobalt_ingot": "Cobalt Ingot",
+  "item.oresextended.cobalt_sword": "Cobalt Sword",
+  "item.oresextended.cobalt_helmet": "Cobalt Helmet",
+  "item.oresextended.cobalt_chestplate": "Cobalt Chestplate",
+  "item.oresextended.cobalt_leggings": "Cobalt Leggings",
+  "item.oresextended.cobalt_boots": "Cobalt Boots"
 }

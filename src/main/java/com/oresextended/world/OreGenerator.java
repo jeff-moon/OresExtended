@@ -16,16 +16,4 @@ import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 import java.util.Random;
 
 public class OreGenerator {
-    public static ConfiguredFeature<?, ?> ORE_COBALT = Feature.ORE
-            .configure(new OreFeatureConfig(
-                    OreFeatureConfig.Rules.STONE_ORE_REPLACEABLES,
-                    BlockRegistry.COBALT_ORE.getDefaultState(),
-                    20)) // TODO move this vein size to a config?
-            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
-                UniformHeightProvider.create(
-                        YOffset.fixed(0),
-                        YOffset.fixed(64))
-                )))
-            .spreadHorizontally()
-            .repeat(100); // number of veins per chunk
 }
